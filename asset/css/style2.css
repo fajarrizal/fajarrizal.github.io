@@ -1,0 +1,671 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url("../../img/background-circle-top-faced.png");
+    background-size: 93%;
+    background-repeat: no-repeat;
+    background-position: 360% -5%;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 2rem 1fr 2rem;
+    min-height: 5.66rem;
+    width: auto;
+}
+
+nav .brand img {
+    width: 44px;
+}
+
+.navbar-flex {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 2/3;
+}
+
+.navbar-flex ul li a {
+    display: flex;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #9B9B9B;
+    transition: .4s;
+    margin: 0 1.85rem 0 0;
+}
+
+.navbar-flex a:hover {
+    color: #232730;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: #0f0f0f;
+    margin: 5px;
+    transition: all .4s ease;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+/* animated slide*/
+
+.slide {
+    opacity: 0;
+    transition: .7s;
+    transform: translate(0px, 90px);
+}
+
+.slide.sliding {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+
+/* Main content */
+
+.main {
+    display: grid;
+    grid-template-columns: 2rem 1fr 2rem;
+    height: 100%;
+    width: auto;
+}
+
+.about-me {
+    grid-column: 2/3;
+    margin: 2.66rem 0;
+    max-width: 60rem;
+}
+
+.about-me h1 {
+    font-size: 11.20rem;
+    margin-bottom: 3.2rem;
+    font-weight: 600;
+    color: #040505;
+}
+
+.about-me span {
+    color: #0652DD;
+}
+
+.about-me p {
+    font-size: 1.33rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    max-width: 44rem;
+    color: #5B5B5B;
+}
+
+.ttle-con3 h2 {
+    font-weight: 700;
+    color: #040505;
+    margin-top: 3rem;
+}
+
+.container-3 {
+    display: grid;
+    grid-template-columns: 2rem 1fr 2rem;
+    width: auto;
+    height: 100%;
+}
+
+.flex-box-con3 {
+    display: flex;
+    grid-column: 2/3;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+}
+
+.flex-box-con3 h3 {
+    font-weight: 700;
+    color: #232730;
+    margin-top: 0.5em;
+}
+
+.flex-box-con3 p {
+    font-weight: 500;
+    color: #646565;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;
+    margin-top: 0.7em;
+}
+
+.contain6-sectionlast {
+    display: grid;
+    grid-template-columns: 2rem 1fr 2rem;
+    width: auto;
+    height: 24rem;
+    margin-top: 3rem;
+}
+
+.contact-section {
+    grid-column: 2/3;
+    max-width: 76rem;
+    height: auto;
+}
+
+.contact-section h3 {
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: #040505;
+}
+
+.mailmenow-ou a {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #9B9B9B;
+}
+
+.contact-section p {
+    color: #9B9B9B;
+    font-weight: 600;
+    font-size: 1.5rem;
+    max-width: 80%;
+}
+
+footer {
+    width: auto;
+    height: 2.4rem;
+    margin: auto;
+}
+
+footer p {
+    color: #aaaaaa;
+    max-width: 76rem;
+    margin: auto;
+    padding: 0 0 0 2rem;
+}
+
+
+/* Works.html css */
+
+.works-intro {
+    display: grid;
+    grid-template-columns: 2rem 1fr 2rem;
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+}
+
+.isjust-text {
+    grid-column: 2/3;
+}
+
+.small {
+    font-size: 1.25rem !important;
+    margin-bottom: 0.66rem;
+    color: #c5c5c5 !important;
+    font-weight: 300 !important;
+}
+
+.isjust-text h1 {
+    font-weight: 700;
+    font-size: 8.45rem;
+    line-height: 9rem;
+    margin-top: 2.55rem;
+    color: #040505;
+}
+
+.isjust-text p {
+    color: #0652DD;
+}
+
+.projects-highlight {
+    display: grid;
+    grid-template-columns: 2rem 1fr 2rem;
+    align-content: flex-start;
+    width: 100%;
+    height: auto;
+}
+
+.selected-project {
+    display: flex;
+    grid-column: 2/3;
+    justify-content: space-around;
+}
+
+.projects h4 {
+    color: #BEBEBE;
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-top: 0.7rem;
+}
+
+.projects h2 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: #040505;
+}
+
+.projects p {
+    font-weight: 400;
+    font-size: 1.12rem;
+    color: #AEAEAE;
+    box-sizing: border-box;
+    line-height: 1.55rem;
+}
+
+
+/* end of Works.html css */
+
+
+/* mobile */
+
+@media (max-width: 576px) {
+    body {
+        background-position: 390% 4%;
+    }
+    .navbar {
+        background: #fcfcfc;
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        min-height: 4.5rem;
+    }
+    nav .brand img {
+        width: 40px;
+    }
+    .navbar-flex ul {
+        position: fixed;
+        top: 4.2rem;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        z-index: 9999;
+        padding: 1rem 0;
+        display: none;
+        margin: 0;
+    }
+    .navbar-flex ul.nav-active {
+        height: 100%;
+        opacity: 1;
+        background-color: #fcfcfc;
+        display: block;
+    }
+    .navbar-flex ul li a {
+        padding: 1.4rem 1rem;
+        margin-top: 0.68rem;
+        display: block;
+        text-decoration: none;
+        color: #9B9B9B;
+        font-size: 1.5rem;
+        border-bottom: none !important;
+    }
+    .burger {
+        display: block;
+    }
+    .about-me h1 {
+        font-size: 4.50rem;
+    }
+    .about-me p {
+        font-size: 1.07rem;
+        width: 100%;
+        line-height: 2.1rem;
+    }
+    .ttle-con3 h2 {
+        font-size: 1.80rem;
+        text-align: center;
+        padding-top: 2rem;
+    }
+    .flex-box-con3 {
+        width: 100%;
+        margin: 2rem 0;
+    }
+    .flex-box-con3 div {
+        width: 100%;
+        height: auto;
+        padding-top: 1.6rem;
+        padding-bottom: 2rem;
+    }
+    .flex-box-con3 h3 {
+        font-size: 1.16rem;
+    }
+    .flex-box-con3 p {
+        font-size: 1.07rem;
+    }
+    .tools-devs1 {
+        border-bottom: 2px solid #e2e2e2;
+    }
+    .tools-devs2 {
+        border-bottom: 2px solid #e2e2e2;
+    }
+    .tools-devs3 {
+        border-bottom: 2px solid #e2e2e2;
+    }
+    .tools-devs4 {
+        border-bottom: 2px solid #e2e2e2;
+    }
+    .tools-devs5 {
+        border-bottom: 2px solid #e2e2e2;
+    }
+    .contain6-sectionlast {
+        height: 22rem;
+    }
+    .contact-section h3 {
+        font-size: 1.46rem;
+    }
+    .mailmenow-ou a {
+        font-size: 1.2rem;
+    }
+    .contact-section p {
+        font-size: 1.25rem;
+        line-height: 1.95rem;
+    }
+    footer p {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        padding-bottom: 1.4rem;
+        text-align: center;
+        line-height: 1.76rem;
+    }
+    /* works.html css start */
+    .isjust-text h1 {
+        font-size: 3.22rem;
+        line-height: 3.9rem;
+        margin-top: 1rem;
+    }
+    .projects-highlight {
+        margin-top: 5rem;
+    }
+    .selected-project {
+        flex-wrap: wrap;
+    }
+    .projects {
+        padding-bottom: 3.5rem;
+    }
+    .projects img {
+        width: 100%;
+    }
+    /* works.html end css */
+}
+
+
+/* landscape mode */
+
+@media (min-width: 577px) and (max-width: 767.98px) {
+    body {
+        background-position: 300% 7%;
+    }
+    .about-me h1 {
+        font-size: 8rem;
+    }
+    .about-me p {
+        font-size: 1.17rem;
+        max-width: 32rem;
+    }
+    .ttle-con3 h2 {
+        font-size: 2.45rem;
+        text-align: center;
+    }
+    .flex-box-con3 {
+        width: 500px;
+        margin: 2rem 0;
+    }
+    .flex-box-con3 div {
+        width: 100%;
+        height: 13rem;
+        padding: 1.3rem 0;
+    }
+    .flex-box-con3 h3 {
+        font-size: 1.3rem;
+    }
+    .flex-box-con3 p {
+        font-size: 1.1rem;
+    }
+    .tools-devs1 {
+        border-bottom: 2px solid #e2e2e2;
+    }
+    .tools-devs2 {
+        border-bottom: 2px solid #e2e2e2;
+    }
+    .tools-devs3 {
+        border-bottom: 2px solid #e2e2e2;
+    }
+    .tools-devs4 {
+        border-bottom: 2px solid #e2e2e2;
+    }
+    .tools-devs5 {
+        border-bottom: 2px solid #e2e2e2;
+    }
+    .contain6-sectionlast {
+        height: 20rem;
+    }
+    .contact-section h3 {
+        font-size: 1.88rem;
+    }
+    .contact-section p {
+        font-size: 1.17rem;
+        line-height: 1.66rem;
+    }
+    /* works.html css start */
+    .isjust-text h1 {
+        font-size: 4.22rem;
+        line-height: 5rem;
+        margin-top: 1rem;
+    }
+    .projects-highlight {
+        margin-top: 4.6rem;
+        margin-bottom: 4rem;
+        height: 30rem;
+    }
+    .projects {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+    .projects img {
+        width: 16rem;
+    }
+    .projects h4 {
+        font-size: 1rem;
+    }
+    .projects h2 {
+        font-size: 1.90rem;
+    }
+    .projects p {
+        width: 15rem;
+        font-size: 0.95rem;
+    }
+    /* works.html end css */
+}
+
+
+/* tablet mode */
+
+@media (min-width: 768px) and (max-width: 991.91px) {
+    body {
+        background-position: 270% 2%;
+    }
+    .about-me h1 {
+        font-size: 10.3rem;
+    }
+    .about-me p {
+        font-size: 1.27rem;
+        max-width: 36.6rem;
+    }
+    .ttle-con3 h2 {
+        font-size: 2.77rem;
+        padding-left: 2rem;
+    }
+    .flex-box-con3 {
+        width: 670px;
+    }
+    .flex-box-con3 div {
+        width: 20.8rem;
+        padding: 0.8rem 1rem;
+        padding-bottom: 2rem;
+    }
+    .flex-box-con3 h3 {
+        font-size: 1.3rem;
+    }
+    .flex-box-con3 p {
+        font-size: 1.1rem;
+    }
+    .tools-devs1 {
+        padding-left: 0em !important;
+        border-bottom: 2px solid #f5f5f5;
+        border-right: 2px solid #f5f5f5;
+    }
+    .tools-devs2 {
+        border-bottom: 2px solid #f5f5f5;
+    }
+    .tools-devs3 {
+        padding-left: 0em !important;
+        border-bottom: 2px solid #f5f5f5;
+        border-right: 2px solid #f5f5f5;
+    }
+    .tools-devs4 {
+        border-bottom: 2px solid #f5f5f5;
+    }
+    .tools-devs5 {
+        padding-left: 0em !important;
+        border-right: 2px solid #f5f5f5
+    }
+    .contain6-sectionlast {
+        height: 22.2rem;
+    }
+    .contact-section h3 {
+        font-size: 2rem;
+    }
+    .contact-section p {
+        font-size: 1.22rem;
+        line-height: 1.77rem;
+    }
+    /* works.html css start */
+    .isjust-text h1 {
+        font-size: 6rem;
+        line-height: 6.88rem;
+    }
+    .projects-highlight {
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        height: 35rem;
+    }
+    .projects img {
+        width: 21rem;
+    }
+    .projects h4 {
+        font-size: 1.23rem;
+    }
+    .projects h2 {
+        font-size: 2.15rem;
+    }
+    /* works.html end css */
+}
+
+
+/* desktop */
+
+@media(min-width: 992px) {
+    .navbar {
+        grid-template-columns: 1fr 85% 1fr;
+    }
+    .main {
+        grid-template-columns: 1fr 85% 1fr;
+    }
+    .container-3 {
+        grid-template-columns: 1fr 85% 1fr;
+    }
+    .contain6-sectionlast {
+        grid-template-columns: 1fr 85% 1fr;
+    }
+    .ttle-con3 h2 {
+        font-size: 3rem;
+        padding-left: 6rem;
+    }
+    .flex-box-con3 {
+        width: 56rem;
+    }
+    .flex-box-con3 div {
+        width: 18.62rem;
+        height: 19rem;
+        padding: 0.8rem 1.6rem 1rem 2.3%;
+    }
+    .flex-box-con3 h3 {
+        font-size: 1.4rem;
+    }
+    .flex-box-con3 p {
+        font-size: 1.1rem;
+    }
+    .tools-devs1 {
+        padding-left: 0em !important;
+        border-bottom: 2px solid #f5f5f5;
+        border-right: 2px solid #f5f5f5;
+    }
+    .tools-devs2 {
+        border-bottom: 2px solid #f5f5f5;
+        border-right: 2px solid #f5f5f5;
+    }
+    .tools-devs3 {
+        border-bottom: 2px solid #f5f5f5;
+    }
+    .tools-devs4 {
+        padding-left: 0em !important;
+        border-right: 2px solid #f5f5f5;
+    }
+    .tools-devs5 {
+        border-right: 2px solid #f5f5f5;
+    }
+    /* Works.html css */
+    .works-intro {
+        grid-template-columns: 1fr 85% 1fr;
+    }
+    .projects-highlight {
+        margin-top: 10rem;
+        margin-bottom: 7.8rem;
+    }
+    .selected-project {
+        padding-bottom: 3.5rem;
+    }
+    .projects {
+        text-align: center;
+    }
+    .below-project {
+        box-sizing: border-box;
+        width: 85%;
+        margin: auto;
+        text-align: left;
+    }
+    .projects img {
+        width: 85%;
+        transition: all .3s ease-in-out;
+    }
+    .projects img:hover {
+        filter: none;
+        box-shadow: 0px 0px 14px #f3f3f3fd;
+        transform: scale(1.01);
+    }
+    .give-spacetop {
+        margin-top: 4rem;
+    }
+    /* end of Works.html css  */
+}
