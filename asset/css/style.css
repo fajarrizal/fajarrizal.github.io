@@ -9,12 +9,12 @@
 }
 
 body {
-    background-color: #f1f2f6;
+    background-color: #ffffff;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-image: url("../../img/aurora.png");
-    background-size: 117%;
+    background-image: url("../../img/art.png");
+    background-size: 56%;
     background-repeat: no-repeat;
-    background-position: 10% -3%;
+    background-position: 100% 3%;
 }
 
 .navbar {
@@ -92,16 +92,16 @@ nav .brand img {
 
 .main {
     display: grid;
-    grid-template-columns: 1rem 1fr 1rem;
+    grid-template-columns: 2rem 1fr 2rem;
+    width: auto;
 }
 
 .intro {
     grid-column: 2/3;
-    box-sizing: border-box;
     padding-bottom: 1rem;
-    text-align: center;
     margin: auto;
-    margin-top: 4.68rem;
+    margin-top: 1.68rem;
+    width: 100%;
 }
 
 
@@ -143,71 +143,74 @@ nav .brand img {
 
 /* end of animation section */
 
-.intro img {
-    width: 5rem;
+.intro span {
+    background: -webkit-linear-gradient(to right, #130F40 15%, #FF7979 52%, #0652DD 86%);
+    background: -moz-linear-gradient(to right, #130F40 15%, #FF7979 52%, #0652DD 86%);
+    background: linear-gradient(to right, #130F40 15%, #FF7979 52%, #0652DD 86%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .intro h2 {
-    font-weight: 600;
-    margin-top: 0.2em;
+    font-weight: 700;
+    line-height: 7rem;
     margin-bottom: 0.55rem;
-    color: #040505;
+    color: #0B0C1E;
 }
 
 .intro p {
     line-height: 1.66em;
-    font-weight: 500;
-    color: #06080E;
-    margin-bottom: 1.8em;
-    box-sizing: border-box;
+    font-weight: 400;
+    color: #7c7c7c;
+    margin-bottom: 0.89em;
+    margin-top: 1em;
 }
 
 .intro a {
     display: inline-block;
-    color: #494D57;
+    color: #7c7c7c;
     transition: .3s;
     border-radius: 3px;
-    font-weight: 500;
+    font-weight: 400;
     transition: .2s;
-    font-size: 1.22rem;
+    font-size: 1.32rem;
 }
 
 .intro a::after {
     display: block;
     content: '';
-    border-bottom: 2px solid #040505;
+    border-bottom: 2px solid #0B0C1E;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
 }
 
 .intro a:hover {
-    color: #040505;
+    color: #0B0C1E;
 }
 
 .intro a:hover::after {
     transform: scaleX(1);
 }
 
-.selected-works h2 {
-    font-size: 5rem;
-    font-weight: 600;
-    text-align: center;
-    color: #040505;
-    margin-bottom: 4rem;
-}
-
 .container-2 {
     display: grid;
     grid-template-columns: 2rem 1fr 2rem;
-    height: 47rem;
+    height: auto;
     align-content: flex-start;
     width: auto;
+    margin-top: 5rem;
+    padding-bottom: 3rem;
 }
 
 .flexing-con2 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     grid-column: 2/3;
+}
+
+.project-featured {
+    padding-top: 2.3rem;
 }
 
 .project-featured h4 {
@@ -220,7 +223,7 @@ nav .brand img {
 .project-featured h2 {
     font-size: 2.3rem;
     font-weight: 500;
-    color: #040505;
+    color: #0B0C1E;
 }
 
 .project-featured p {
@@ -235,8 +238,9 @@ nav .brand img {
     font-size: 5rem;
     font-weight: 600;
     text-align: center;
-    color: #040505;
+    color: #0B0C1E;
     margin-bottom: -4rem;
+    margin-top: 2rem;
 }
 
 .container-3 {
@@ -314,8 +318,8 @@ footer p {
 
 @media (max-width: 576px) {
     body {
-        background-size: 220%;
-        background-position: 47% 1%;
+        background-size: 90%;
+        background-position: 140% 10.8%;
     }
     .navbar {
         background: #fcfcfc;
@@ -357,45 +361,33 @@ footer p {
         display: block;
     }
     .main {
-        margin-top: 2.33rem;
-        height: 25rem;
-    }
-    .intro {
-        max-width: 25rem;
-        margin-top: 2.22rem;
-        padding-bottom: 1rem;
+        margin-top: 1.44rem;
+        height: 30rem;
     }
     .intro h2 {
-        font-size: 1.9rem;
+        font-size: 2.60rem;
+        line-height: 3.22rem;
     }
     .intro p {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
     .intro a {
-        font-size: 1.10rem;
+        font-weight: 500;
+        font-size: 1rem;
+        color: #ff7979;
     }
     .intro img {
         width: 4.3rem;
     }
-    .selected-works h2 {
-        font-size: 2.5rem;
-        margin-top: 4rem;
-        margin-bottom: -3rem;
-    }
     .container-2 {
-        height: auto;
-        margin-bottom: 1rem;
-        margin-top: 3rem;
-        padding-bottom: 1.5rem;
-    }
-    .flexing-con2 {
-        flex-wrap: wrap;
-    }
-    .project-featured {
-        padding-top: 3.2rem;
+        margin-bottom: 0.66rem;
+        padding-bottom: 0.44rem;
     }
     .project-featured img {
         width: 100%;
+    }
+    .project-featured h2 {
+        font-size: 1.64rem;
     }
     .project-featured p {
         width: 100%;
@@ -403,7 +395,7 @@ footer p {
     }
     .creative_work h2 {
         font-size: 2.5rem;
-        margin-top: 6rem;
+        margin-top: 4rem;
         margin-bottom: -3rem;
     }
     .contain6-sectionlast {
@@ -441,8 +433,8 @@ footer p {
 
 @media (min-width: 577px) and (max-width: 767.98px) {
     body {
-        background-size: 135%;
-        background-position: 30% 1%;
+        background-size: 60%;
+        background-position: 120% 4%;
     }
     nav .brand img {
         width: 40px;
@@ -451,29 +443,24 @@ footer p {
         font-size: 0.9rem;
     }
     .main {
-        height: 26rem;
-    }
-    .intro {
-        max-width: 25rem;
-        padding-bottom: 1rem;
-        margin-top: 2.22rem;
+        margin-top: -1rem;
+        height: 22rem;
     }
     .intro h2 {
-        font-size: 1.9rem;
+        font-size: 3.35rem;
+        max-width: 25rem;
+        line-height: 4rem;
+    }
+    .intro p {
+        font-size: 1rem;
+        width: 20rem;
     }
     .intro a {
-        font-size: 1.10rem;
-    }
-    .intro img {
-        width: 4.3rem;
-    }
-    .selected-works h2 {
-        font-size: 3.70rem;
-        margin-top: 4rem;
+        font-size: 1rem;
+        color: #ff7979;
     }
     .container-2 {
-        height: 35em;
-        margin-top: 3rem;
+        margin-top: 6rem;
     }
     .project-featured {
         padding-right: 0.2rem;
@@ -495,6 +482,7 @@ footer p {
     }
     .creative_work h2 {
         font-size: 3.70rem;
+        margin-top: 3rem;
     }
     .contain6-sectionlast {
         height: 20rem;
@@ -524,41 +512,34 @@ footer p {
 
 @media (min-width: 768px) and (max-width: 991.91px) {
     body {
-        background-size: 119%;
-        background-position: 0% 2%;
+        background-size: 63%;
+        background-position: 130% 4%;
     }
     .main {
         height: 27rem;
-        margin-top: 2.2rem;
-    }
-    .intro {
-        max-width: 27rem;
-        padding-bottom: 1rem;
-        margin-top: 2rem;
     }
     .intro h2 {
-        font-size: 2.1rem;
+        font-size: 3.6rem;
+        max-width: 26rem;
+        line-height: 4rem;
     }
     .intro p {
         font-size: 1.10rem;
+        width: 24rem;
     }
     .intro a {
-        font-size: 1.15rem;
-    }
-    .selected-works h2 {
-        font-size: 4rem;
-        margin-top: 4rem;
+        font-size: 1.05rem;
+        color: #ff7979;
     }
     .container-2 {
-        margin-top: 3rem;
-        height: 40rem;
+        margin-top: 4rem;
     }
     .project-featured {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
     .project-featured img {
-        width: 21.2rem;
+        width: 19.4rem;
     }
     .project-featured h4 {
         font-size: 1rem;
@@ -607,7 +588,7 @@ footer p {
         min-height: 100vh;
     }
     .container-2 {
-        grid-template-columns: 1fr 85% 1fr;
+        grid-template-columns: 1rem 1fr 1rem;
     }
     .container-3 {
         grid-template-columns: 1fr 85% 1fr;
@@ -615,15 +596,17 @@ footer p {
     .contain6-sectionlast {
         grid-template-columns: 1fr 85% 1fr;
     }
-    .intro {
-        max-width: 34rem;
-        margin-top: 6rem;
-    }
+    /* .intro {
+        padding-bottom: 1rem; 
+       background-color: azure;
+    } */
     .intro h2 {
-        font-size: 2.3rem;
+        font-size: 6rem;
+        max-width: 46rem;
     }
     .intro p {
-        font-size: 1.3rem;
+        font-size: 1.50rem;
+        width: 33rem;
     }
     /* .intro h1::before {
         content: ' ';
@@ -636,7 +619,7 @@ footer p {
         z-index: -1;
     } */
     .project-featured img {
-        width: 25.5rem;
+        width: 29rem;
         /* filter: gray; */
         /* IE5+ */
         /* -webkit-filter: grayscale(1); */
