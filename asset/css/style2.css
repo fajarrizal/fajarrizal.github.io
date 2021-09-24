@@ -648,6 +648,7 @@ footer p {
     }
     .projects {
         text-align: center;
+        padding: 3rem;
     }
     .below-project {
         box-sizing: border-box;
