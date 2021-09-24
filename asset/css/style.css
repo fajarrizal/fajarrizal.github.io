@@ -618,6 +618,10 @@ footer p {
         margin-left: -1rem;
         z-index: -1;
     } */
+	
+    .project-featured {
+    	padding: 2.1rem;
+    }
     .project-featured img {
         width: 29rem;
         /* filter: gray; */
