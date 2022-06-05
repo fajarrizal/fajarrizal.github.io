@@ -236,26 +236,6 @@ nav .brand img {
     font-weight: 500;
 }
 
-.list-number {
-    width: auto;
-    height: 10rem;
-    padding: 1.3rem;
-    text-align: center;
-}
-
-.list-number a {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #9B9B9B;
-    padding: 1.5rem;
-    transition: .3s ease-in-out;
-    margin: 0.55rem;
-}
-
-.list-number a:hover {
-    color: #040505;
-}
-
 footer {
     width: auto;
     height: 2.4rem;
@@ -368,13 +348,6 @@ footer p {
     /* .case-img-highlight-last img {
         width: 92%;
     } */
-    .list-number {
-        padding: 0.25rem;
-        height: 8rem;
-    }
-    .list-number a {
-        font-size: 1.89rem;
-    }
     footer p {
         padding-left: 1.2rem;
         padding-right: 1.2rem;
@@ -418,12 +391,6 @@ footer p {
     .paragraph-info4 p {
         font-size: 1.20rem;
         width: 26rem;
-    }
-    .list-number {
-        padding: 0.66rem;
-    }
-    .list-number a {
-        font-size: 1.5rem;
     }
 }
 
