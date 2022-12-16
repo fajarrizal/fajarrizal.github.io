@@ -11,10 +11,6 @@
 body {
     background-color: #ffffff;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-image: url("../../img/art.png");
-    background-size: 56%;
-    background-repeat: no-repeat;
-    background-position: 100% 3%;
 }
 
 .navbar {
@@ -41,13 +37,9 @@ nav .brand img {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
-    color: #9B9B9B;
+    color: #fdfdfd;
     transition: .4s;
     margin: 0 1.85rem 0 0;
-}
-
-.navbar-flex a:hover {
-    color: #232730;
 }
 
 .burger {
@@ -87,23 +79,24 @@ nav .brand img {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-
 /* main content  */
 
 .main {
     display: grid;
     grid-template-columns: 2rem 1fr 2rem;
     width: auto;
+    background-image: url("../../img/main_bg2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .intro {
     grid-column: 2/3;
     padding-bottom: 1rem;
     margin: auto;
-    margin-top: 1.68rem;
     width: 100%;
 }
-
 
 /* Animation Slide */
 
@@ -144,48 +137,44 @@ nav .brand img {
 /* end of animation section */
 
 .intro span {
-    background: -webkit-linear-gradient(to right, #130F40 15%, #FF7979 52%, #0652DD 86%);
-    background: -moz-linear-gradient(to right, #130F40 15%, #FF7979 52%, #0652DD 86%);
-    background: linear-gradient(to right, #130F40 15%, #FF7979 52%, #0652DD 86%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #FFB200;
 }
 
 .intro h2 {
     font-weight: 700;
     line-height: 7rem;
     margin-bottom: 0.55rem;
-    color: #0B0C1E;
+    color: #fdfdfd;
 }
 
 .intro p {
     line-height: 1.66em;
     font-weight: 400;
-    color: #7c7c7c;
+    color: #ffffff;
     margin-bottom: 0.89em;
     margin-top: 1em;
 }
 
 .intro a {
     display: inline-block;
-    color: #7c7c7c;
+    color: #ffffff;
     transition: .3s;
     border-radius: 3px;
-    font-weight: 400;
+    font-weight: 500;
     transition: .2s;
-    font-size: 1.32rem;
+    font-size: 1.52rem;
 }
 
 .intro a::after {
     display: block;
     content: '';
-    border-bottom: 2px solid #0B0C1E;
+    border-bottom: 2px solid #FFB200;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
 }
 
 .intro a:hover {
-    color: #0B0C1E;
+    color: #FFB200;
 }
 
 .intro a:hover::after {
@@ -211,6 +200,9 @@ nav .brand img {
 
 .project-featured {
     padding-top: 2.3rem;
+}
+.project-featured img{
+    border-radius: 1rem;
 }
 
 .project-featured h4 {
@@ -354,30 +346,25 @@ footer p {
         margin-top: 0.68rem;
         display: block;
         text-decoration: none;
-        color: #9B9B9B;
+        color: #636363;
         font-size: 1.5rem;
     }
     .burger {
         display: block;
     }
     .main {
-        margin-top: 1.44rem;
-        height: 30rem;
+        height: 100vh;
+        background-position: left;
     }
     .intro h2 {
-        font-size: 2.60rem;
-        line-height: 3.22rem;
+        font-size: 4.3rem;
+        line-height: 4.8rem;
     }
     .intro p {
-        font-size: 0.95rem;
+        font-size: 1.2rem;
     }
     .intro a {
-        font-weight: 500;
-        font-size: 1rem;
-        color: #ff7979;
-    }
-    .intro img {
-        width: 4.3rem;
+        font-size: 1.12rem;
     }
     .container-2 {
         margin-bottom: 0.66rem;
@@ -443,21 +430,21 @@ footer p {
         font-size: 0.9rem;
     }
     .main {
-        margin-top: -1rem;
-        height: 22rem;
+        margin-top: -5.64rem;
+        height: 35rem;
     }
     .intro h2 {
-        font-size: 3.35rem;
-        max-width: 25rem;
-        line-height: 4rem;
+        margin-top: 4rem;
+        font-size: 3.71rem;
+        max-width: 28rem;
+        line-height: 4.2rem;
     }
     .intro p {
-        font-size: 1rem;
-        width: 20rem;
+        font-size: 1.06rem;
+        width: 27rem;
     }
     .intro a {
-        font-size: 1rem;
-        color: #ff7979;
+        font-size: 1.05rem;
     }
     .container-2 {
         margin-top: 6rem;
@@ -516,20 +503,21 @@ footer p {
         background-position: 130% 4%;
     }
     .main {
-        height: 27rem;
+        margin-top: -5.67em;
+        height: 33rem;
     }
     .intro h2 {
-        font-size: 3.6rem;
-        max-width: 26rem;
-        line-height: 4rem;
+        margin-top: 2rem;
+        font-size: 3.8rem;
+        max-width: 28.9rem;
+        line-height: 4.3rem;
     }
     .intro p {
         font-size: 1.10rem;
-        width: 24rem;
+        width: 30rem;
     }
     .intro a {
-        font-size: 1.05rem;
-        color: #ff7979;
+        font-size: 1.09rem;
     }
     .container-2 {
         margin-top: 4rem;
@@ -584,6 +572,7 @@ footer p {
         grid-template-columns: 1fr 85% 1fr;
     }
     .main {
+        margin-top: -5.67em;
         grid-template-columns: 1fr 85% 1fr;
         min-height: 100vh;
     }
@@ -596,10 +585,6 @@ footer p {
     .contain6-sectionlast {
         grid-template-columns: 1fr 85% 1fr;
     }
-    /* .intro {
-        padding-bottom: 1rem; 
-       background-color: azure;
-    } */
     .intro h2 {
         font-size: 6rem;
         max-width: 46rem;
@@ -608,17 +593,6 @@ footer p {
         font-size: 1.50rem;
         width: 33rem;
     }
-    /* .intro h1::before {
-        content: ' ';
-        position: absolute;
-        width: 5.95em;
-        height: .3em;
-        background: #5E36FF;
-        margin-top: 9.22rem;
-        margin-left: -1rem;
-        z-index: -1;
-    } */
-	
     .project-featured {
     	padding: 2.1rem;
     }
