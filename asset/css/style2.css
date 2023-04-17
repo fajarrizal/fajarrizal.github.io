@@ -258,6 +258,10 @@ footer p {
     padding-bottom: 3.5rem;
 }
 
+.projects img{
+    border-radius: 1rem;
+}
+
 .projects h4 {
     color: #BEBEBE;
     font-weight: 300;
